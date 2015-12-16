@@ -7,7 +7,7 @@ var bookStoreControllers = angular.module('bookStoreControllers', []);
 bookStoreControllers.controller('BookListCtrl', ['$scope', '$http',
   function($scope, $http) {
     $http.get('bookStore/list').success(function(data) {
-      console.log("dddddeekzzzsdkllllkk");
+      console.log("dddkk");
       console.log("watch data",data);
       $scope.books = data;
     });
