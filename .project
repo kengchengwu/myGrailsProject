@@ -26,7 +26,7 @@
 		<link>
 			<name>.link_to_grails_plugins</name>
 			<type>2</type>
-			<location>/Users/wukengcheng/Documents/ggts/myGrailsProject/target/work/plugins</location>
+			<location>H:/angularJS/myGrailsProject/target/work/plugins</location>
 		</link>
 	</linkedResources>
 </projectDescription>
