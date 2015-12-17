@@ -10,9 +10,9 @@ var appTargetPath = '../web-app';
 //JS
 gulp.task('js', function () {
    return gulp.src(appSrcPath+'/js/src/*.js')
-			  .pipe(plugins.concat('main.js'))
+			  .pipe(plugins.concat('app.js'))
 			  .pipe(gulp.dest(appSrcPath+'/js/dist'))
-			  .pipe(plugins.rename('main.min.js'))
+			  .pipe(plugins.rename('app.min.js'))
 			  .pipe(plugins.uglify())
 			  .pipe(gulp.dest(appSrcPath+'/js/dist'))
 			  ;
@@ -39,12 +39,12 @@ gulp.task('watch', ['connect'], function () {
 
 
 //Connect
-gulp.task('connect', function() {
+// gulp.task('connect', function() {
   // plugins.connect.server({
   // 	root: appSrcPath,
   // 	port: 8081,
   // });
-});
+// });
  
 
 gulp.task('default', ['build'], function() {});
