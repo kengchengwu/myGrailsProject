@@ -20,7 +20,7 @@ gulp.task('js', function () {
 
 //SCSS
 gulp.task('scss', function () {
-   return gulp.src(appSrcPath+'/scss/src/app.scss')
+   return gulp.src(appSrcPath+'/scss/src/*.scss')
         .pipe(plugins.sass())
         .pipe(gulp.dest(appSrcPath+'/scss/dist'))
         ;
